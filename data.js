@@ -1,0 +1,130 @@
+const footballData = {
+  "leagues": [
+    {
+      "league_name": "Premier League",
+      "country": "England",
+      "teams": [
+        {"id": 33, "team_name": "Manchester United", "image_link": "https://media.api-sports.io/football/teams/33.png", "venue": "Old Trafford"},
+        {"id": 34, "team_name": "Newcastle United", "image_link": "https://media.api-sports.io/football/teams/34.png", "venue": "St James' Park"},
+        {"id": 35, "team_name": "AFC Bournemouth", "image_link": "https://media.api-sports.io/football/teams/35.png", "venue": "Vitality Stadium"},
+        {"id": 39, "team_name": "Chelsea", "image_link": "https://media.api-sports.io/football/teams/39.png", "venue": "Stamford Bridge"},
+        {"id": 40, "team_name": "Liverpool", "image_link": "https://media.api-sports.io/football/teams/40.png", "venue": "Anfield"},
+        {"id": 42, "team_name": "Arsenal", "image_link": "https://media.api-sports.io/football/teams/42.png", "venue": "Emirates Stadium"},
+        {"id": 44, "team_name": "Burnley", "image_link": "https://media.api-sports.io/football/teams/44.png", "venue": "Turf Moor"},
+        {"id": 45, "team_name": "Everton", "image_link": "https://media.api-sports.io/football/teams/45.png", "venue": "Goodison Park"},
+        {"id": 46, "team_name": "Sheffield United", "image_link": "https://media.api-sports.io/football/teams/46.png", "venue": "Bramall Lane"},
+        {"id": 47, "team_name": "Tottenham Hotspur", "image_link": "https://media.api-sports.io/football/teams/47.png", "venue": "Tottenham Hotspur Stadium"},
+        {"id": 48, "team_name": "West Ham United", "image_link": "https://media.api-sports.io/football/teams/48.png", "venue": "London Stadium"},
+        {"id": 49, "team_name": "Brighton & Hove Albion", "image_link": "https://media.api-sports.io/football/teams/49.png", "venue": "Amex Stadium"},
+        {"id": 50, "team_name": "Manchester City", "image_link": "https://media.api-sports.io/football/teams/50.png", "venue": "Etihad Stadium"},
+        {"id": 51, "team_name": "Crystal Palace", "image_link": "https://media.api-sports.io/football/teams/51.png", "venue": "Selhurst Park"},
+        {"id": 52, "team_name": "Fulham", "image_link": "https://media.api-sports.io/football/teams/52.png", "venue": "Craven Cottage"},
+        {"id": 55, "team_name": "Brentford", "image_link": "https://media.api-sports.io/football/teams/55.png", "venue": "Gtech Community Stadium"},
+        {"id": 63, "team_name": "Leeds United", "image_link": "https://media.api-sports.io/football/teams/63.png", "venue": "Elland Road"},
+        {"id": 64, "team_name": "Luton Town", "image_link": "https://media.api-sports.io/football/teams/64.png", "venue": "Kenilworth Road"},
+        {"id": 65, "team_name": "Nottingham Forest", "image_link": "https://media.api-sports.io/football/teams/65.png", "venue": "City Ground"},
+        {"id": 66, "team_name": "Wolverhampton Wanderers", "image_link": "https://media.api-sports.io/football/teams/66.png", "venue": "Molineux Stadium"}
+      ]
+    },
+    {
+      "league_name": "La Liga",
+      "country": "Spain",
+      "teams": [
+        {"id": 529, "team_name": "FC Barcelona", "image_link": "https://media.api-sports.io/football/teams/529.png", "venue": "Camp Nou"},
+        {"id": 530, "team_name": "Atlético Madrid", "image_link": "https://media.api-sports.io/football/teams/530.png", "venue": "Wanda Metropolitano"},
+        {"id": 531, "team_name": "Athletic Club", "image_link": "https://media.api-sports.io/football/teams/531.png", "venue": "San Mamés"},
+        {"id": 533, "team_name": "Valencia", "image_link": "https://media.api-sports.io/football/teams/533.png", "venue": "Mestalla"},
+        {"id": 534, "team_name": "Girona", "image_link": "https://media.api-sports.io/football/teams/534.png", "venue": "Montilivi"},
+        {"id": 536, "team_name": "Sevilla", "image_link": "https://media.api-sports.io/football/teams/536.png", "venue": "Ramón Sánchez Pizjuán"},
+        {"id": 541, "team_name": "Real Madrid", "image_link": "https://media.api-sports.io/football/teams/541.png", "venue": "Santiago Bernabeu"},
+        {"id": 542, "team_name": "Alavés", "image_link": "https://media.api-sports.io/football/teams/542.png", "venue": "Mendizorroza"},
+        {"id": 543, "team_name": "Real Betis", "image_link": "https://media.api-sports.io/football/teams/543.png", "venue": "Benito Villamarín"},
+        {"id": 546, "team_name": "Getafe", "image_link": "https://media.api-sports.io/football/teams/546.png", "venue": "Coliseum Alfonso Pérez"},
+        {"id": 547, "team_name": "Granada", "image_link": "https://media.api-sports.io/football/teams/547.png", "venue": "Nuevo Los Cármenes"},
+        {"id": 548, "team_name": "Real Sociedad", "image_link": "https://media.api-sports.io/football/teams/548.png", "venue": "Reale Arena"},
+        {"id": 549, "team_name": "UD Las Palmas", "image_link": "https://media.api-sports.io/football/teams/549.png", "venue": "Gran Canaria"},
+        {"id": 558, "team_name": "Celta Vigo", "image_link": "https://media.api-sports.io/football/teams/558.png", "venue": "Balaídos"},
+        {"id": 559, "team_name": "Mallorca", "image_link": "https://media.api-sports.io/football/teams/559.png", "venue": "Son Moix"},
+        {"id": 715, "team_name": "Osasuna", "image_link": "https://media.api-sports.io/football/teams/715.png", "venue": "El Sadar"},
+        {"id": 724, "team_name": "Rayo Vallecano", "image_link": "https://media.api-sports.io/football/teams/724.png", "venue": "Vallecas"},
+        {"id": 726, "team_name": "Villarreal", "image_link": "https://media.api-sports.io/football/teams/726.png", "venue": "Estadio de la Cerámica"},
+        {"id": 727, "team_name": "Almería", "image_link": "https://media.api-sports.io/football/teams/727.png", "venue": "Juegos Mediterráneos"},
+        {"id": 728, "team_name": "Cádiz", "image_link": "https://media.api-sports.io/football/teams/728.png", "venue": "Nuevo Mirandilla"}
+      ]
+    },
+    {
+      "league_name": "Serie A",
+      "country": "Italy",
+      "teams": [
+        {"id": 487, "team_name": "Lazio", "image_link": "https://media.api-sports.io/football/teams/487.png", "venue": "Stadio Olimpico"},
+        {"id": 488, "team_name": "Sassuolo", "image_link": "https://media.api-sports.io/football/teams/488.png", "venue": "Mapei Stadium"},
+        {"id": 489, "team_name": "AC Milan", "image_link": "https://media.api-sports.io/football/teams/489.png", "venue": "San Siro"},
+        {"id": 492, "team_name": "Napoli", "image_link": "https://media.api-sports.io/football/teams/492.png", "venue": "Stadio Diego Armando Maradona"},
+        {"id": 494, "team_name": "Genoa", "image_link": "https://media.api-sports.io/football/teams/494.png", "venue": "Luigi Ferraris"},
+        {"id": 495, "team_name": "Fiorentina", "image_link": "https://media.api-sports.io/football/teams/495.png", "venue": "Artemio Franchi"},
+        {"id": 496, "team_name": "Juventus", "image_link": "https://media.api-sports.io/football/teams/496.png", "venue": "Allianz Stadium"},
+        {"id": 497, "team_name": "Roma", "image_link": "https://media.api-sports.io/football/teams/497.png", "venue": "Stadio Olimpico"},
+        {"id": 499, "team_name": "Atalanta", "image_link": "https://media.api-sports.io/football/teams/499.png", "venue": "Gewiss Stadium"},
+        {"id": 502, "team_name": "Inter Milan", "image_link": "https://media.api-sports.io/football/teams/502.png", "venue": "San Siro"},
+        {"id": 503, "team_name": "Torino", "image_link": "https://media.api-sports.io/football/teams/503.png", "venue": "Stadio Olimpico Grande Torino"},
+        {"id": 504, "team_name": "Udinese", "image_link": "https://media.api-sports.io/football/teams/504.png", "venue": "Dacia Arena"},
+        {"id": 505, "team_name": "Bologna", "image_link": "https://media.api-sports.io/football/teams/505.png", "venue": "Renato Dall'Ara"},
+        {"id": 511, "team_name": "Verona", "image_link": "https://media.api-sports.io/football/teams/511.png", "venue": "Marcantonio Bentegodi"},
+        {"id": 514, "team_name": "Cagliari", "image_link": "https://media.api-sports.io/football/teams/514.png", "venue": "Unipol Domus"},
+        {"id": 515, "team_name": "Salernitana", "image_link": "https://media.api-sports.io/football/teams/515.png", "venue": "Arechi"},
+        {"id": 521, "team_name": "Lecce", "image_link": "https://media.api-sports.io/football/teams/521.png", "venue": "Via del Mare"},
+        {"id": 523, "team_name": "Empoli", "image_link": "https://media.api-sports.io/football/teams/523.png", "venue": "Carlo Castellani"},
+        {"id": 1579, "team_name": "Frosinone", "image_link": "https://media.api-sports.io/football/teams/1579.png", "venue": "Benito Stirpe"},
+        {"id": 867, "team_name": "Monza", "image_link": "https://media.api-sports.io/football/teams/867.png", "venue": "U-Power Stadium"}
+      ]
+    },
+    {
+      "league_name": "Bundesliga",
+      "country": "Germany",
+      "teams": [
+        {"id": 157, "team_name": "Bayern Munich", "image_link": "https://media.api-sports.io/football/teams/157.png", "venue": "Allianz Arena"},
+        {"id": 159, "team_name": "1899 Hoffenheim", "image_link": "https://media.api-sports.io/football/teams/159.png", "venue": "PreZero Arena"},
+        {"id": 160, "team_name": "SC Freiburg", "image_link": "https://media.api-sports.io/football/teams/160.png", "venue": "Europa-Park Stadion"},
+        {"id": 161, "team_name": "Borussia Dortmund", "image_link": "https://media.api-sports.io/football/teams/161.png", "venue": "Signal Iduna Park"},
+        {"id": 162, "team_name": "Werder Bremen", "image_link": "https://media.api-sports.io/football/teams/162.png", "venue": "Weserstadion"},
+        {"id": 163, "team_name": "VfL Wolfsburg", "image_link": "https://media.api-sports.io/football/teams/163.png", "venue": "Volkswagen Arena"},
+        {"id": 165, "team_name": "RB Leipzig", "image_link": "https://media.api-sports.io/football/teams/165.png", "venue": "Red Bull Arena"},
+        {"id": 167, "team_name": "Borussia Mönchengladbach", "image_link": "https://media.api-sports.io/football/teams/167.png", "venue": "Borussia-Park"},
+        {"id": 168, "team_name": "Bayer Leverkusen", "image_link": "https://media.api-sports.io/football/teams/168.png", "venue": "BayArena"},
+        {"id": 169, "team_name": "Eintracht Frankfurt", "image_link": "https://media.api-sports.io/football/teams/169.png", "venue": "Deutsche Bank Park"},
+        {"id": 170, "team_name": "FC Augsburg", "image_link": "https://media.api-sports.io/football/teams/170.png", "venue": "WWK Arena"},
+        {"id": 172, "team_name": "FSV Mainz 05", "image_link": "https://media.api-sports.io/football/teams/172.png", "venue": "MEWA Arena"},
+        {"id": 173, "team_name": "VfB Stuttgart", "image_link": "https://media.api-sports.io/football/teams/173.png", "venue": "Mercedes-Benz Arena"},
+        {"id": 174, "team_name": "1. FC Köln", "image_link": "https://media.api-sports.io/football/teams/174.png", "venue": "RheinEnergieStadion"},
+        {"id": 176, "team_name": "Union Berlin", "image_link": "https://media.api-sports.io/football/teams/176.png", "venue": "Stadion An der Alten Försterei"},
+        {"id": 182, "team_name": "VfL Bochum", "image_link": "https://media.api-sports.io/football/teams/182.png", "venue": "Vonovia Ruhrstadion"},
+        {"id": 188, "team_name": "Heidenheim", "image_link": "https://media.api-sports.io/football/teams/188.png", "venue": "Voith-Arena"},
+        {"id": 192, "team_name": "Darmstadt 98", "image_link": "https://media.api-sports.io/football/teams/192.png", "venue": "Merck-Stadion am Böllenfalltor"}
+      ]
+    },
+    {
+      "league_name": "Ligue 1",
+      "country": "France",
+      "teams": [
+        {"id": 77, "team_name": "Lille", "image_link": "https://media.api-sports.io/football/teams/77.png", "venue": "Stade Pierre-Mauroy"},
+        {"id": 78, "team_name": "Strasbourg", "image_link": "https://media.api-sports.io/football/teams/78.png", "venue": "Stade de la Meinau"},
+        {"id": 79, "team_name": "Paris Saint-Germain", "image_link": "https://media.api-sports.io/football/teams/79.png", "venue": "Parc des Princes"},
+        {"id": 80, "team_name": "Lens", "image_link": "https://media.api-sports.io/football/teams/80.png", "venue": "Stade Bollaert-Delelis"},
+        {"id": 81, "team_name": "Monaco", "image_link": "https://media.api-sports.io/football/teams/81.png", "venue": "Stade Louis II"},
+        {"id": 82, "team_name": "Montpellier", "image_link": "https://media.api-sports.io/football/teams/82.png", "venue": "Stade de la Mosson"},
+        {"id": 83, "team_name": "Nantes", "image_link": "https://media.api-sports.io/football/teams/83.png", "venue": "Stade de la Beaujoire"},
+        {"id": 84, "team_name": "Nice", "image_link": "https://media.api-sports.io/football/teams/84.png", "venue": "Allianz Riviera"},
+        {"id": 85, "team_name": "Olympique Lyonnais", "image_link": "https://media.api-sports.io/football/teams/85.png", "venue": "Groupama Stadium"},
+        {"id": 87, "team_name": "Rennes", "image_link": "https://media.api-sports.io/football/teams/87.png", "venue": "Roazhon Park"},
+        {"id": 89, "team_name": "Toulouse", "image_link": "https://media.api-sports.io/football/teams/89.png", "venue": "Stadium de Toulouse"},
+        {"id": 91, "team_name": "Olympique Marseille", "image_link": "https://media.api-sports.io/football/teams/91.png", "venue": "Stade Vélodrome"},
+        {"id": 93, "team_name": "Reims", "image_link": "https://media.api-sports.io/football/teams/93.png", "venue": "Stade Auguste-Delaune"},
+        {"id": 94, "team_name": "Lorient", "image_link": "https://media.api-sports.io/football/teams/94.png", "venue": "Stade du Moustoir"},
+        {"id": 95, "team_name": "Clermont Foot", "image_link": "https://media.api-sports.io/football/teams/95.png", "venue": "Stade Gabriel Montpied"},
+        {"id": 96, "team_name": "Brest", "image_link": "https://media.api-sports.io/football/teams/96.png", "venue": "Stade Francis-Le Blé"},
+        {"id": 97, "team_name": "Le Havre", "image_link": "https://media.api-sports.io/football/teams/97.png", "venue": "Stade Océane"},
+        {"id": 106, "team_name": "Metz", "image_link": "https://media.api-sports.io/football/teams/106.png", "venue": "Stade Saint-Symphorien"}
+      ]
+    }
+  ]
+};
